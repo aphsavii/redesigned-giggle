@@ -467,7 +467,7 @@ if (fs.existsSync(distDir)) {
   });
 }
 
-app.listen(port, host, () => {
+app.listen(port,  () => {
   console.log(`Server listening on http://${host}:${port}`);
   if (host !== "127.0.0.1" && host !== "localhost") {
     console.log(`Local access: http://127.0.0.1:${port}`);
